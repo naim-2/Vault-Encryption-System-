@@ -6,7 +6,9 @@ this project: Gloria, Saxiben and Angila.
 
 ## 1. First set up the project as follows:
 Dowload and install Android Studio
+#
 Download the zipped folder and unzip it OR clone the repository to your local machine
+#
 Open the project from within Android Studio
 
 ## 2. Run the project on either the VM or through an Android phone once the project loads
