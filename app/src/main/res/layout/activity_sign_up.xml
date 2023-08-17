@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/lock"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+    <TableRow android:padding="5dip">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:text="CUSTOMER SIGN UP"
+            android:textColor="#0ff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="First Name"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="First Name"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Last Name"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Last Name"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Username"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Username"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Email"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Password"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:inputType="textPassword"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Password"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Confirm Password"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:inputType="textPassword"/>
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Sign_Up"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="SIGN UP"
+            android:textColor="#000"
+            android:background="@drawable/button_events"
+            android:textSize="32sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/LogInPage"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:text="Log In?"
+            android:textColor="#ff0"
+            android:textSize="16sp" />
+
+    </TableRow>
+
+</TableLayout>
+

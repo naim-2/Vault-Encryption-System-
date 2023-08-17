@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/lock"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+    <TableRow android:padding="5dip">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:text="CUSTOMER CARD VAULT"
+            android:textColor="#0ff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Card Number"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Card Number"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Card Name"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/cardName"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Card Name"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Expiration Date"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/expirationDate"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Expiration Date"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Security Code"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/securityCode"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Security Code"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Billing Address"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/billingAddress"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Billing Address"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Date Created"
+            android:textColor="#0ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dateCreated"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:hint="Date Created"
+            android:padding="5dp"
+            android:textColor="#000" />
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_c"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="ADD CARD"
+            android:textColor="#000"
+            android:background="@drawable/button_events"
+            android:textSize="32sp" />
+    </TableRow>
+
+    <TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="UPDATE CARD"
+            android:textColor="#000"
+            android:background="@drawable/button_events"
+            android:textSize="32sp" />
+    </TableRow>
+
+    <TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="DELETE CARD"
+            android:textColor="#000"
+            android:background="@drawable/button_events"
+            android:textSize="32sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/all"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:text="View All Cards"
+            android:textColor="#ff0"
+            android:textSize="16sp" />
+
+    </TableRow>
+
+</TableLayout>
+
